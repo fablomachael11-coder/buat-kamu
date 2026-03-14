@@ -1,0 +1,95 @@
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(135deg,#ffd6e7,#ffeaf4);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+}
+
+/* card */
+
+.card{
+background:rgba(255,255,255,0.75);
+backdrop-filter:blur(15px);
+padding:40px;
+border-radius:25px;
+box-shadow:0 20px 60px rgba(0,0,0,0.15);
+text-align:center;
+width:360px;
+animation:fade 1s ease;
+}
+
+@keyframes fade{
+from{opacity:0; transform:translateY(40px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+h1{
+color:#ff2e63;
+}
+
+/* spotify */
+
+.spotify{
+width:260px;
+margin:20px 0;
+border-radius:10px;
+}
+
+/* tombol */
+
+button{
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:#ff2e63;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+background:#ff004c;
+}
+
+/* mawar */
+
+.rose{
+font-size:120px;
+animation:bloom 2s infinite alternate;
+}
+
+@keyframes bloom{
+from{transform:scale(0.9);}
+to{transform:scale(1.2);}
+}
+
+/* hati jatuh */
+
+.heart{
+position:absolute;
+color:#ff2e63;
+animation:fall 6s linear infinite;
+}
+
+@keyframes fall{
+0%{transform:translateY(-100px);}
+100%{transform:translateY(110vh);}
+}
+
+/* kelopak bunga */
+
+.petal{
+position:absolute;
+animation:petalFall 8s linear infinite;
+}
+
+@keyframes petalFall{
+0%{transform:translateY(-100px) rotate(0deg);}
+100%{transform:translateY(110vh) rotate(360deg);}
+}
